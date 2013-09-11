@@ -1,23 +1,23 @@
-Welcome to $\binom{\mathcal{Math}}{\text{down}}$.  Supported Markdown syntax:
+.. default-role: math
 
-# A 1st level header
-## A 2nd level header etc... (TODO: decreasing fonts)
+A 1st level header
+==================
 
-**Bold** and *italic* text.  _Underscores_ also create italic but please use *asterisks*.
+A 2nd level header etc...
+-------------------------
 
-Use $\LaTeX$ syntax for inline math: $\sum_y^z dollars$ or \( \int_u^v backslash\ parens \) 
-and for display math:
-\[\int_d^e backslash\ brackets\]
-or
-$$\sum_b^c double\ dollars$$
+**Bold** and *italic* text.
 
-**How to edit formulas**: Just move the cursor into the formula using arrow keys, and you'll be able to edit it.
-It'll render as math as soon as move the cursor outside.
-TRY IT NOW!
+Use `\LaTeX` syntax surrounded by backticks for inline math: `\sum_y^z backticks`
+and ``.. math::`` directive for display math:
 
- - **Lists** are created by space, bullet, space where "bullet" is * or - or number period.  *There must be an empty line before the list.*
+.. math::
+
+  \int_d^e backslash\ brackets
+
+- **Lists** are created by + or * or - bullets.  *There must be an empty line before the list.*
 
     1. Numbered lists also work.
-    2. To nest lists just indent them by 4 spaces.
+    2. To nest lists just indent them more spaces.
         + 8 spaces for more nested etc...
  
