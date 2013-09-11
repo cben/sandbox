@@ -17,7 +17,7 @@ and ``.. math::`` directive for display math:
 
 - **Lists** are created by + or * or - bullets.  *There must be an empty line before the list.*
 
-    1. Numbered lists also work.
-    2. To nest lists just indent them more spaces.
-        + 8 spaces for more nested etc...
+  1. Numbered lists also work.
+  2. To nest lists just indent them the same amount as text after the parent's list bullet.
+     + more nested etc...
  
