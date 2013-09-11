@@ -8,7 +8,7 @@ A 2nd level header etc...
 
 For inline math use :math:`\LaTeX` syntax with ``:math:`` role: `\sum_y^z explicit\ role`:math:
 
-.. default-role: math
+.. default-role:: math
 
 or after ``.. default-role: math`` you can use just backticks : `\sum_y^z backticks`
 
