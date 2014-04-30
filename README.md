@@ -1,10 +1,10 @@
 ---
-title: Title
-layout: default
 ---
 
 sandbox
 =======
+
+Processed by Jekyll into https://cben.github.io/sandbox/README
 
 inline \\( \frac{kram}{down} \\) ?
 
