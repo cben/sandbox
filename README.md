@@ -4,27 +4,21 @@
 sandbox
 =======
 
+Dummy project to test various aspects of github and integrations with it.
+
 ## markdown
 
 README processed by Jekyll into https://cben.github.io/sandbox/README
 
 MathJax loaded in output via Jekyll template `_layouts/math.html`.
 
-  - Delimiters [recognized by kramdown](http://kramdown.gettalong.org/syntax.html#math-blocks):
+Delimiters [recognized by kramdown](http://kramdown.gettalong.org/syntax.html#math-blocks):
 
-    inline $$ \frac{kram}{down} $$ ?
+inline $$ \frac{kram}{down} \sum_0^\infty $$ ?
 
-    $$ \sum_0^\infty $$
+$$ \frac{kram}{down} \sum_0^\infty $$
 
-  - Delimiters recognized by MathJax after kramdown processing (defaults, could configure something else):
-
-  inline \\( \frac{kram}{down} \\) ?
-  
-  \\[ \sum_0^\infty \\]
-  
-  The backslashes have to be doubled in source to produce `\(` and friends in HTML.
-  
-  This approach is buggy because kramdown parses all math, e.g. `_` might be treated as italic: \\( a_b + c_d \\)
+The second is display math because it occurs alone in a block.
 
 ## LaTeX
 
