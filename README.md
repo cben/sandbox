@@ -20,6 +20,8 @@ $$ \frac{kram}{down} \sum_0^\infty $$
 
 The second is display math because it occurs alone in a block.
 
+See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX instead of MathJax.
+
 ## LaTeX
 
 Example content taken from Authorea.  Currently only `test.tex` is used.
