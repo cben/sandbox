@@ -11,7 +11,7 @@ KaTeX loaded in output via Jekyll template `_layouts/katex.html`.
 
 Delimiters [recognized by kramdown](http://kramdown.gettalong.org/syntax.html#math-blocks):
 
-inline $$ \frac{kram}{down} \sum_0^\infty $$ ?
+inline $$ \frac{kram}{down} \sum_0^\infty $$ text.
 
 $$ \frac{kram}{down} \sum_0^\infty $$
 
