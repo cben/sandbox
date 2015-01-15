@@ -10,7 +10,7 @@ Dummy project to test various aspects of github and integrations with it.
 
 README processed by Jekyll into https://cben.github.io/sandbox/README
 
-MathJax loaded in output via Jekyll template `_layouts/math.html`.
+MathJax loaded in output via Jekyll template `_layouts/default.html`.
 
 Delimiters [recognized by kramdown](http://kramdown.gettalong.org/syntax.html#math-blocks):
 
