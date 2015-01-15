@@ -15,7 +15,7 @@
       if (script.type.match(/^math\/tex/)) {
         var text = script.text === "" ? script.innerHTML : script.text;
         if (script.type.match(/mode\s*=\s*display/)) {
-          text = "\displaymode{" + text + "}";
+          text = "\\displaymode{" + text + "}";
         }
         script.insertAdjacentHTML("beforebegin", katex.renderToString(text));
       }
