@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+  </head>
+  <body>
+{{ content }}
+  </body>
+  <script>
+    var scripts = document.getElementsByTagName("script");
+    for(var i = 0; i < scripts.length; i++) {
+      var script = scripts[i];
+      if (script.type.match(/^math\/tex/) {
+        var text = script.text === "" ? script.innerHTML : script.text;
+        if (script.type.match(/mode\s*=\s*display/) {
+          katex.render("\displaymode{" + tex[i].innerText + "}", tex[i]);
+        } else {
+          katex.render(tex[i].innerText, tex[i]);
+        }
+      }
+    }
+  </script>
+</html>
+
