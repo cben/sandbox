@@ -35,9 +35,10 @@ $$a_{1,1}x^2+2a_{1,2}xy+a_{2,2}y^2+a_1x+a_2y+a=0$$
 
 </div>
 
+<kbd>C-x</kbd> <kbd>M-c</kbd> <kbd>M-butterfly</kbd>
+
 ## LaTeX
 
 Example content taken from Authorea.  Currently only `test.tex` is used.
 
 Compiled via ShareLaTeX's CI: [![PDF Status](https://www.sharelatex.com/github/repos/cben/sandbox/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/cben/sandbox/builds/latest/output.pdf)
-
