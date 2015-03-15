@@ -3,3 +3,10 @@ defaults:
       path: ""  # all files
     values:
       layout: "default"
+
+markdown: kramdown  # already the default in Github's Jekyll.
+kramdown:
+  # The following is probably not yet undestood by the Kramdown available on Github...
+  math_engine: mathjax  # default in Kramdown
+  math_engine_opts:
+    preview: true   # not default but better acessibility
