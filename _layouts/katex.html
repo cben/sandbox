@@ -2,8 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.js"></script>
+    <style>
+      /* We want previews included so at least the TeX source is visible to clients
+         without Javascript, or without network connection
+         (new option in kramdown 1.6, enabled in _config.yml)
+         but we hide them if math rendering completes sucessfully. */
+      .MathJax_Preview { color: #888 }
+      .math_finished .MathJax_Preview { display: none }
+    </style>
   </head>
   <body>
 {{ content }}
@@ -11,6 +19,7 @@
   <script>
     var scripts = document.getElementsByTagName("script");
     for (var i = 0; i < scripts.length; i++) {
+      /* TODO: keep going after an individual parse error. */
       var script = scripts[i];
       if (script.type.match(/^math\/tex/)) {
         var text = script.text === "" ? script.innerHTML : script.text;
@@ -20,6 +29,7 @@
                                   katex.renderToString(text, options));
       }
     }
+    document.body.className += " math_finished";
   </script>
 </html>
 
