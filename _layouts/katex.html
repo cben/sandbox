@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.js"></script>
   </head>
   <body>
 {{ content }}
@@ -14,10 +14,10 @@
       var script = scripts[i];
       if (script.type.match(/^math\/tex/)) {
         var text = script.text === "" ? script.innerHTML : script.text;
-        if (script.type.match(/mode\s*=\s*display/)) {
-          text = "\\displaystyle {" + text + "}";
-        }
-        script.insertAdjacentHTML("beforebegin", katex.renderToString(text));
+        var options = script.type.match(/mode\s*=\s*display/) ?
+                      {displayMode: true} : {};
+        script.insertAdjacentHTML("beforebegin",
+                                  katex.renderToString(text, options));
       }
     }
   </script>
