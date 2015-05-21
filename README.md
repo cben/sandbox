@@ -6,6 +6,8 @@ sandbox
 
 Dummy project to test various aspects of github and integrations with it.
 
+Testing [abuse of relative links to link to issues](http://stackoverflow.com/a/20829706/239657): [#1](/../../issues/1).
+
 ## markdown
 
 README processed by Jekyll into https://cben.github.io/sandbox/README
