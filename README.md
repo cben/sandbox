@@ -41,6 +41,10 @@ $$a_{1,1}x^2+2a_{1,2}xy+a_{2,2}y^2+a_1x+a_2y+a=0$$
 
 ## LaTeX
 
-Example content taken from Authorea.  Currently only `test.tex` is used.
+Example files taken from Authorea.  (including `layout.md` which is not really markdown but list of files)
 
-Compiled via ShareLaTeX's CI: [![PDF Status](https://www.sharelatex.com/github/repos/cben/sandbox/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/cben/sandbox/builds/latest/output.pdf)
+~~Compiled via~~ ShareLaTeX's CI was shut down long ago, TODO: find other ways to auto-compile latex from github.
+
+- One way is pushing/pulling same repo to [git.overleaf.com][1] and gitub.  Only gets compiled on overleaf.  No strong reason to use both, except as transition mechanism...)
+
+[1]: https://www.overleaf.com/blog/195-new-collaborate-online-and-offline-with-overleaf-and-git-beta
