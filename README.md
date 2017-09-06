@@ -39,6 +39,16 @@ $$a_{1,1}x^2+2a_{1,2}xy+a_{2,2}y^2+a_1x+a_2y+a=0$$
 
 <kbd>C-x</kbd> <kbd>M-c</kbd> <kbd>M-butterfly</kbd>
 
+## Nested fenced blocks
+
+`````markdown
+Foo:
+```ruby
+block.parents.map {|b| b.language}
+```
+bar.
+`````
+
 ---
 
 ## LaTeX sync playground
