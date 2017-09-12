@@ -51,6 +51,8 @@ bar.
 
 ---
 
+ ## This is a `##` header(?) prefixed with a space, let's see if it counts as header?
+
 ## LaTeX sync playground
 
 As of 2015–2016 my recommendadion for collaborative LaTeX editing is [Overleaf](https://overleaf.com) (former WriteLaTeX).
