@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
     <style>
       /* We want previews included so at least the TeX source is visible to clients
          without Javascript, or without network connection
@@ -17,6 +17,9 @@
 {{ content }}
   </body>
   <script>
+    // We don't use the KaTeX auto-render extension.
+    // Kramdown already did the work of detecting math (safely, no syntax confusions),
+    // we just need to process those it detected.
     var scripts = document.getElementsByTagName("script");
     for (var i = 0; i < scripts.length; i++) {
       /* TODO: keep going after an individual parse error. */
@@ -32,4 +35,3 @@
     document.body.className += " math_finished";
   </script>
 </html>
-
