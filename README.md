@@ -24,6 +24,10 @@ See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX inst
 
 <div dir="rtl" markdown="1">
 
+### Dummy PR change
+
+some text added here
+
 ### Right-to-left עברית
 
 נזכיר שעקומה מסדר שני היא בעלת מבנה כללי.
