@@ -26,8 +26,6 @@ See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX inst
 
 <div dir="rtl" markdown="1">
 
-Testing push via svn
-
 ### Right-to-left עברית
 
 נזכיר שעקומה מסדר שני היא בעלת מבנה כללי.
@@ -75,3 +73,7 @@ But then what if you want to also edit offline?
 [1]: https://www.overleaf.com/blog/195-new-collaborate-online-and-offline-with-overleaf-and-git-beta
 
 P.S. shameless plug: if anybody is reading this and looking for collaborative *markdown* editing with math, try https://Mathdown.net.
+
+----
+
+- Testing push via svn with master configured "Protect this branch", "Include administrators".
