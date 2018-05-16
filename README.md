@@ -26,6 +26,8 @@ See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX inst
 
 <div dir="rtl" markdown="1">
 
+Testing push via svn
+
 ### Right-to-left עברית
 
 נזכיר שעקומה מסדר שני היא בעלת מבנה כללי.
