@@ -24,6 +24,10 @@ The second is display math because it occurs alone in a block.
 
 See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX instead of MathJax.
 
+### Links in SVG?
+img tag: <img src="https://g.gravizo.com/svg?%20digraph%20G%20%7B%0A%20%20%20%20link%20%5Bshape%3Dbox%3B%20URL%3D%22http%3A%2F%2Fgoogle.com%22%5D%3B%0A%20%20%7D"></img>
+markdown image syntax: ![gravizo](https://g.gravizo.com/svg?%20digraph%20G%20%7B%0A%20%20%20%20link%20%5Bshape%3Dbox%3B%20URL%3D%22http%3A%2F%2Fgoogle.com%22%5D%3B%0A%20%20%7D)
+
 <div dir="rtl" markdown="1">
 
 ### Right-to-left עברית
@@ -73,3 +77,7 @@ But then what if you want to also edit offline?
 [1]: https://www.overleaf.com/blog/195-new-collaborate-online-and-offline-with-overleaf-and-git-beta
 
 P.S. shameless plug: if anybody is reading this and looking for collaborative *markdown* editing with math, try https://Mathdown.net.
+
+----
+
+- Testing push via svn with master configured "Protect this branch", "Include administrators".
