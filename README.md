@@ -26,6 +26,13 @@ See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX inst
 
 <div dir="rtl" markdown="1">
 
+### Links in SVG?
+<img src='https://g.gravizo.com/svg?
+ digraph G {
+    link [shape=box; URL="http://google.com"];
+  }
+'>
+
 ### Right-to-left עברית
 
 נזכיר שעקומה מסדר שני היא בעלת מבנה כללי.
