@@ -27,11 +27,7 @@ See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX inst
 <div dir="rtl" markdown="1">
 
 ### Links in SVG?
-![gravizo graph with a node with URL attr](https://g.gravizo.com/svg?
- digraph G {
-    link [shape=box; URL="http://google.com"];
-  }
-)
+![gravizo](https://g.gravizo.com/svg?%20digraph%20G%20%7B%0A%20%20%20%20link%20%5Bshape%3Dbox%3B%20URL%3D%22http%3A%2F%2Fgoogle.com%22%5D%3B%0A%20%20%7D)
 
 ### Right-to-left עברית
 
