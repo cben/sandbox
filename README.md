@@ -27,8 +27,8 @@ See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX inst
 ### Links in SVG?
 img tag: <img src="https://g.gravizo.com/svg?%20digraph%20G%20%7B%0A%20%20%20%20link%20%5Bshape%3Dbox%3B%20URL%3D%22http%3A%2F%2Fgoogle.com%22%5D%3B%0A%20%20%7D"></img>
 markdown image syntax: ![gravizo](https://g.gravizo.com/svg?%20digraph%20G%20%7B%0A%20%20%20%20link%20%5Bshape%3Dbox%3B%20URL%3D%22http%3A%2F%2Fgoogle.com%22%5D%3B%0A%20%20%7D)
-inline svg tag: <svg width="62pt" height="44pt"
- viewBox="0.00 0.00 62.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+inline svg tag:
+<svg width="62pt" height="44pt" viewBox="0.00 0.00 62.00 44.00">
  <g id="graph1" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
   <title>G</title>
   <polygon fill="white" stroke="white" points="-4,5 -4,-40 59,-40 59,5 -4,5"/>
@@ -42,7 +42,7 @@ inline svg tag: <svg width="62pt" height="44pt"
  </g>
 </svg>
 
-
+See also https://github.com/cben/sandbox/issues/8 — SVG links don't work in issue comments either.
 
 <div dir="rtl" markdown="1">
 
