@@ -1,6 +1,10 @@
 ---
 ---
 
+[![Repo on GitHub](https://img.shields.io/badge/repo-GitHub-3D76C2.svg)](https://github.com/cben/sandbox)
+[![Repo on GitLab](https://img.shields.io/badge/repo-GitLab-6C488A.svg)](https://gitlab.com/cben/sandbox)
+[![Repo on BitBucket](https://img.shields.io/badge/repo-BitBucket-1F5081.svg)](https://bitbucket.org/cbensf/test-math)
+
 sandbox
 =======
 
