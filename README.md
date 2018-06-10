@@ -8,13 +8,13 @@
 sandbox
 =======
 
-Dummy project to test various aspects of github and integrations with it.
+Dummy project to test various aspects of github / gitlab / bitbucket and integrations with it.
 
 Testing [abuse of relative links to link to issues](http://stackoverflow.com/a/20829706/239657): [#1](/../../issues/1).
 
 ## markdown
 
-README processed by Jekyll into https://cben.github.io/sandbox/README
+On Github Pages, README processed by Jekyll into https://cben.github.io/sandbox/README
 
 MathJax loaded in output via Jekyll template `_layouts/default.html`.
 
@@ -27,6 +27,14 @@ $$ \frac{kram}{down} \sum_0^\infty $$
 The second is display math because it occurs alone in a block.
 
 See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX instead of MathJax.
+
+### Gitlab math syntaxes
+
+inline $`\frac{kram}{down} \sum_0^\infty`$ text.
+
+```math
+\frac{kram}{down} \sum_0^\infty
+```
 
 ### Links in SVG?
 img tag: <img src="https://g.gravizo.com/svg?%20digraph%20G%20%7B%0A%20%20%20%20link%20%5Bshape%3Dbox%3B%20URL%3D%22http%3A%2F%2Fgoogle.com%22%5D%3B%0A%20%20%7D"></img>
