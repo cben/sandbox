@@ -28,6 +28,18 @@ The second is display math because it occurs alone in a block.
 
 See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX instead of MathJax.
 
+### Linking to headers {#test-anchor}
+
+Does github support [explicit header anchors](https://talk.commonmark.org/t/anchors-in-markdown/247/28)?
+[link to `#test-anchor`](#test-anchor)
+
+Does GitHub [automatically generate ids for headers](https://talk.commonmark.org/t/feature-request-automatically-generated-ids-for-headers/115/80)?  Yes — [doc](https://help.github.com/articles/basic-writing-and-formatting-syntax/#section-links) 
+
+- The links have no prefix: [link to `#markdown`](#markdown)
+- However the actual anchor is prefixed `id="user-content-markdown"`!  [link to `#user-content-markdown`](#user-content-markdown)  
+  Interesting, this link scrolls to a slightly different place than `#markdown`.
+  I'm not sure how the unprefixed `#markdown` link works at all, perhaps by JS parsing the URL?
+
 ### Gitlab math syntaxes
 
 inline $`\frac{kram}{down} \sum_0^\infty`$ text.
