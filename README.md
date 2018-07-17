@@ -28,17 +28,18 @@ The second is display math because it occurs alone in a block.
 
 See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX instead of MathJax.
 
-### Linking to headers {#test-anchor}
+### Linking to headers
+#### Test explicit anchor {#test-anchor}
 
 Does github support [explicit header anchors](https://talk.commonmark.org/t/anchors-in-markdown/247/28)?
-[link to `#test-anchor`](#test-anchor)
+[link to `#test-anchor`](#test-anchor) => No
 
 Does GitHub [automatically generate ids for headers](https://talk.commonmark.org/t/feature-request-automatically-generated-ids-for-headers/115/80)?  Yes — [doc](https://help.github.com/articles/basic-writing-and-formatting-syntax/#section-links) 
 
-- The links have no prefix: [link to `#markdown`](#markdown)
-- However the actual anchor is prefixed `id="user-content-markdown"`!  [link to `#user-content-markdown`](#user-content-markdown)  
-  Interesting, this link scrolls to a slightly different place than `#markdown`.
-  I'm not sure how the unprefixed `#markdown` link works at all, perhaps by JS parsing the URL?
+- The links have no prefix: [link to `#linking-to-headers`](#linking-to-headers)
+- However the actual anchor is prefixed `id="user-content-linking-to-headers"`!  [link to `#user-content-linking-to-headers`](#user-content-linking-to-headers)  
+  Interesting, this prefixed link scrolls to a slightly different place than `#linking-to-headers`.
+  I'm not sure how the unprefixed `#linking-to-headers` link works at all, perhaps by JS parsing the URL?
 
 ### Gitlab math syntaxes
 
