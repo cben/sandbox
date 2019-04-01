@@ -5,6 +5,7 @@
 // should be colored as code, not string.
   
 const foo = [
+    someCode(),
     'TOKEN="\\',
     splitToken(token),
     '"',
