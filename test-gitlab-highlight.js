@@ -9,4 +9,6 @@ const foo = [
     splitToken(token),
     '"',
     'bar "$TOKEN"',
-]
+];
+
+moreCodeColoredAsString();
