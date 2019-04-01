@@ -6,7 +6,7 @@
   
 const foo = [
     someCode(),
-    'TOKEN="\\',
+    'TOKEN=\\',
     splitToken(token),
     '"',
     'bar "$TOKEN"',
