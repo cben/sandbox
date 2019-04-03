@@ -41,12 +41,20 @@ Does GitHub [automatically generate ids for headers](https://talk.commonmark.org
   Interesting, this prefixed link scrolls to a slightly different place than `#linking-to-headers`.
   I'm not sure how the unprefixed `#linking-to-headers` link works at all, perhaps by JS parsing the URL?
 
-### Gitlab math syntaxes
+### Gitlab syntaxes
 
 inline $`\frac{kram}{down} \sum_0^\infty`$ text.
 
 ```math
 \frac{kram}{down} \sum_0^\infty
+```
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
 ```
 
 ### Links in SVG?
