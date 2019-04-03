@@ -28,12 +28,20 @@ The second is display math because it occurs alone in a block.
 
 See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX instead of MathJax.
 
-### Gitlab math syntaxes
+### Gitlab syntaxes
 
 inline $`\frac{kram}{down} \sum_0^\infty`$ text.
 
 ```math
 \frac{kram}{down} \sum_0^\infty
+```
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
 ```
 
 ### Links in SVG?
