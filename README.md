@@ -16,6 +16,28 @@ Testing [abuse of relative links to link to issues](http://stackoverflow.com/a/2
 
 On Github Pages, README processed by Jekyll into https://cben.github.io/sandbox/README
 
+- [ ] unchecked box
+
+  Another paragraph  
+
+- [x] checked box
+  - [ ] sub-TODO
+  - [x] sub-DONE
+
+    Inner paragraph
+    
+  Outer paragraph
+  
+compare formatting to regular list:
+
+- item
+  - sub-TODO
+  - sub-DONE
+
+    Inner paragraph
+    
+  Outer paragraph
+
 MathJax loaded in output via Jekyll template `_layouts/default.html`.
 
 Delimiters [recognized by kramdown](http://kramdown.gettalong.org/syntax.html#math-blocks):
