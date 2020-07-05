@@ -7,6 +7,10 @@ variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
 
+before_script:
+  - gem install bundler
+  - bundle install
+
 test:
   stage: test
   script:
