@@ -72,11 +72,14 @@ inline $`\frac{kram}{down} \sum_0^\infty`$ text.
 ```
 
 ```mermaid
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
+flowchart LR;
+    A-->B;
+    B-->C;
+    C-->D;
+    click A callback "Tooltip for a callback"
+    click B "https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/" "This is a tooltip for a link"
+    click C call callback() "Tooltip for a callback"
+    click D href "https://gist.github.com/martinwoodward/8ad6296118c975510766d80310db71fd?permalink_comment_id=4066128#gistcomment-4066128" "This is a tooltip for a link"
 ```
 
 ```mermaid
