@@ -50,25 +50,12 @@ The second is display math because it occurs alone in a block.
 
 See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX instead of MathJax.
 
-### Linking to headers
-#### Test explicit anchor {#test-anchor}
-
-Does github support [explicit header anchors](https://talk.commonmark.org/t/anchors-in-markdown/247/28)?
-[link to `#test-anchor`](#test-anchor) => No
-
-Does GitHub [automatically generate ids for headers](https://talk.commonmark.org/t/feature-request-automatically-generated-ids-for-headers/115/80)?  Yes — [doc](https://help.github.com/articles/basic-writing-and-formatting-syntax/#section-links) 
-
-- The links have no prefix: [link to `#linking-to-headers`](#linking-to-headers)
-- However the actual anchor is prefixed `id="user-content-linking-to-headers"`!  [link to `#user-content-linking-to-headers`](#user-content-linking-to-headers)  
-  Interesting, this prefixed link scrolls to a slightly different place than `#linking-to-headers`.
-  I'm not sure how the unprefixed `#linking-to-headers` link works at all, perhaps by JS parsing the URL?
-
 ### Gitlab syntaxes
 
-inline $`\frac{kram}{down} \sum_0^\infty`$ text.
+inline $`\frac{git}{lab} \sum_0^\infty`$ text.
 
 ```math
-\frac{kram}{down} \sum_0^\infty
+\frac{git}{lab} \sum_0^\infty
 ```
 
 ```mermaid
@@ -97,6 +84,23 @@ commit
 commit
 merge newbranch
 ```
+
+### Single-dollar math?
+
+Is $\frac{tex}{math} \sum_0^\infty$ rendered?
+
+### Linking to headers
+#### Test explicit anchor {#test-anchor}
+
+Does github support [explicit header anchors](https://talk.commonmark.org/t/anchors-in-markdown/247/28)?
+[link to `#test-anchor`](#test-anchor) => No
+
+Does GitHub [automatically generate ids for headers](https://talk.commonmark.org/t/feature-request-automatically-generated-ids-for-headers/115/80)?  Yes — [doc](https://help.github.com/articles/basic-writing-and-formatting-syntax/#section-links) 
+
+- The links have no prefix: [link to `#linking-to-headers`](#linking-to-headers)
+- However the actual anchor is prefixed `id="user-content-linking-to-headers"`!  [link to `#user-content-linking-to-headers`](#user-content-linking-to-headers)  
+  Interesting, this prefixed link scrolls to a slightly different place than `#linking-to-headers`.  
+  I'm not sure how the unprefixed `#linking-to-headers` link works at all, perhaps by JS parsing the URL?
 
 ### Links in SVG?
 img tag: <img src="https://g.gravizo.com/svg?%20digraph%20G%20%7B%0A%20%20%20%20link%20%5Bshape%3Dbox%3B%20URL%3D%22http%3A%2F%2Fgoogle.com%22%5D%3B%0A%20%20%7D"></img>
