@@ -87,7 +87,10 @@ merge newbranch
 
 ### Single-dollar math?
 
-Is $\frac{tex}{math} \sum_0^\infty$ rendered?
+- Is $\frac{tex}{math} \sum_0^\infty$ rendered?
+- What about $10 to $20 prices?
+- Adjacent text: non-$n^2$-secure ($n \log n$)?
+- Whitespace inside: foo $ math $ bar?
 
 ### Linking to headers
 #### Test explicit anchor {#test-anchor}
