@@ -1,6 +1,6 @@
 # This file is a template, and might need editing before it works on your project.
 # Template project: https://gitlab.com/pages/jekyll
-# Docs: https://docs.gitlab.com/ce/pages/
+# Docs: https://docs.gitlab.com/user/project/pages/
 image: ruby:latest
 
 variables:

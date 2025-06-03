@@ -14,7 +14,8 @@ Testing [abuse of relative links to link to issues](http://stackoverflow.com/a/2
 
 ## markdown
 
-On Github Pages, README processed by Jekyll into https://cben.github.io/sandbox/README
+On Github Pages, README processed by Jekyll into https://cben.github.io/sandbox/README.  
+On GitLab Pages, README processed by Jekyll into https://cben.gitlab.io/sandbox/README.
 
 - [ ] unchecked box
 
