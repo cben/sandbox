@@ -58,6 +58,8 @@ inline $`\frac{git}{lab} \sum_0^\infty`$ text.
 \frac{git}{lab} \sum_0^\infty
 ```
 
+### Mermaid — mostly works in both GitHub & GitLab
+
 ```mermaid
 flowchart LR;
     A-->B;
