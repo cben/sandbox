@@ -74,21 +74,15 @@ flowchart LR;
 
 ```mermaid
 gitGraph:
-options
-{
-    "nodeSpacing": 150,
-    "nodeRadius": 10
-}
-end
-commit
-branch newbranch
-checkout newbranch
-commit
-commit
-checkout master
-commit
-commit
-merge newbranch
+    commit
+    branch newbranch
+    checkout newbranch
+    commit id: "Normal" tag: "v1.0.0"
+    commit
+    checkout main
+    commit id: "Reverse" type: REVERSE tag: "RC_1"
+    merge newbranch
+    commit id: "Highlight" type: HIGHLIGHT tag: "8.8.4"
 ```
 
 ### Single-dollar math?
