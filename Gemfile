@@ -4,5 +4,7 @@ source "https://rubygems.org"
 gem "jekyll"
 
 group :jekyll_plugins do
-  gem "jekyll-kroki"
+  # OOTB this only worked on GitLab (unless I set up manual GitHub Actions?);
+  # disabling in favor on frontend render _includes/head-custom.html
+  #gem "jekyll-kroki"
 end
