@@ -1,11 +1,10 @@
 <script type="module">
     // https://stackoverflow.com/a/79314539/239657,
     // https://github.com/orgs/community/discussions/65040#discussioncomment-12192375
-    Array.from(document.getElementsByClassName("language-mermaid")).forEach(element => {
-      element.classList.add("mermaid")
-    })
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs'
-    window.mermaid = mermaid  // DEBUG
-    mermaid.initialize({startOnLoad:true,theme:'neutral'})
-    await mermaid.run({querySelector:'code.language-mermaid'})
+    if (document.querySelector('code.language-mermaid')) {
+        const mermaid = await import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs').default
+        window.mermaid = mermaid  // DEBUG
+        mermaid.initialize({startOnLoad:true,theme:'neutral'})
+        await mermaid.run({querySelector:'code.language-mermaid'})
+    }
 </script>
