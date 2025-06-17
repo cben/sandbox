@@ -85,6 +85,15 @@ gitGraph:
     commit id: "Highlight" type: HIGHLIGHT tag: "8.8.4"
 ```
 
+GH Pages workaround per https://github.com/orgs/community/discussions/65040#discussioncomment-12192375 :
+<script type="module">
+    Array.from(document.getElementsByClassName("language-mermaid")).forEach(element => {
+      element.classList.add("mermaid");
+    });
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
+
 ### Single-dollar math?
 
 - Is $\frac{tex}{math} \sum_0^\infty$ rendered?
