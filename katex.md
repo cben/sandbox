@@ -2,6 +2,8 @@
 layout: katex
 ---
 
+{::options math_engine="katex" /}
+
 Test kramdown math -> KaTeX rendering
 =====================================
 
