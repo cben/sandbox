@@ -14,7 +14,7 @@ Testing [abuse of relative links to link to issues](http://stackoverflow.com/a/2
 
 ## markdown
 
-On Github Pages, README processed by Jekyll into https://cben.github.io/sandbox/README.  
+On Github Pages, README processed by Jekyll into https://cben.github.io/sandbox/README. 
 On GitLab Pages, README processed by Jekyll into https://cben.gitlab.io/sandbox/README.
 
 - [ ] unchecked box
@@ -39,6 +39,8 @@ compare formatting to regular list:
     
   Outer paragraph
 
+## Math
+
 MathJax loaded in output via Jekyll template `_layouts/default.html`.
 
 Delimiters [recognized by kramdown](http://kramdown.gettalong.org/syntax.html#math-blocks):
@@ -54,12 +56,34 @@ See also <katex.md> -> https://cben.github.io/sandbox/katex for using KaTeX inst
 ### Gitlab syntaxes
 
 inline $`\frac{git}{lab} \sum_0^\infty`$ text.
+- Adjacent text: non-$`n^2`$-secure ($`n \log n`$)?
+- What about $`10 to `$20 prices?
+- Whitespace inside: foo $` math `$ bar?
 
 ```math
 \frac{git}{lab} \sum_0^\infty
 ```
 
-### Mermaid — mostly works in both GitHub & GitLab
+### GitHub Single-dollar math?
+
+- Is $\frac{tex}{math} \sum_0^\infty$ rendered?
+- Adjacent text: non-$n^2$-secure ($n \log n$)?
+- What about $10 to $20 prices?
+- Whitespace inside: foo $ math $ bar?
+
+### Test math in literals
+
+Are math-like sequences inside literals correctly left alone?  
+`dollar: $ x^y $ dollars: $$ a^b $$ backslash-paren: \( c^d \)`
+
+```
+backslash-bracket: \[ e^f \]
+dollars alone:
+
+$$ g^h $$
+```
+
+## Mermaid — mostly works in both GitHub & GitLab
 
 ```mermaid
 flowchart LR;
@@ -83,25 +107,6 @@ gitGraph:
     commit id: "Reverse" type: REVERSE tag: "RC_1"
     merge newbranch
     commit id: "Highlight" type: HIGHLIGHT tag: "8.8.4"
-```
-
-### Single-dollar math?
-
-- Is $\frac{tex}{math} \sum_0^\infty$ rendered?
-- What about $10 to $20 prices?
-- Adjacent text: non-$n^2$-secure ($n \log n$)?
-- Whitespace inside: foo $ math $ bar?
-
-### Test math in literals
-
-Are math-like sequences inside literals correctly left alone?  Or did https://github.com/gettalong/kramdown/issues/626 break that?
-`dollar: $ x^y $ dollars: $$ a^b $$ backslash-paren: \( c^d \)`
-
-```
-backslash-bracket: \[ e^f \]
-dollars alone:
-
-$$ g^h $$
 ```
 
 ### Linking to headers

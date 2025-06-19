@@ -2,37 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
-    <style>
-      /* We want previews included so at least the TeX source is visible to clients
-         without Javascript, or without network connection
-         (new option in kramdown 1.6, enabled in _config.yml)
-         but we hide them if math rendering completes sucessfully. */
-      .MathJax_Preview { color: #888 }
-      .math_finished .MathJax_Preview { display: none }
-    </style>
     {% include head-custom.html %}
   </head>
   <body>
 {{ content }}
   </body>
   <script>
+    const KATEX = `
+      <script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" Xintegrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous" onload="mathRender()"></`+`script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+    `;
+
     // We don't use the KaTeX auto-render extension.
     // Kramdown already did the work of detecting math (safely, no syntax confusions),
     // we just need to process those it detected.
-    var scripts = document.getElementsByTagName("script");
-    for (var i = 0; i < scripts.length; i++) {
-      /* TODO: keep going after an individual parse error. */
-      var script = scripts[i];
-      if (script.type.match(/^math\/tex/)) {
-        var text = script.text === "" ? script.innerHTML : script.text;
-        var options = script.type.match(/mode\s*=\s*display/) ?
-                      {displayMode: true} : {};
-        script.insertAdjacentHTML("beforebegin",
-                                  katex.renderToString(text, options));
+    window.mathElems = document.querySelectorAll('span.kdmath, div.kdmath, code.language-math');
+
+    window.mathRender = () => {
+      var macros = {};  // for \newcommand etc. to affect later formulas.
+      for (const elem of mathElems) {
+        const text = elem.textContent.replace(/^[$]*/g, '').replace(/[$]*$/g, '');
+        var options = { macros, throwOnError: false };
+        options.displayMode = elem.tagName === "DIV";
+        //console.log('katex.render', elem, text, options)
+        katex.render(text, elem, options);
       }
+      document.body.className += " math_finished";
     }
-    document.body.className += " math_finished";
+
+    if (mathElems.length > 0) {
+      document.head.append(document.createRange().createContextualFragment(KATEX));
+    }
   </script>
 </html>

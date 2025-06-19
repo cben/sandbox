@@ -19,9 +19,27 @@ $$ \frac{kram}{down} \sum_0^\infty $$
 
 The second is display math because it occurs alone in a block.
 
+### Gitlab syntaxes
+
+inline $`\frac{git}{lab} \sum_0^\infty`$ text.
+- Adjacent text: non-$`n^2`$-secure ($`n \log n`$)?
+- What about $`10 to `$20 prices?
+- Whitespace inside: foo $` math `$ bar?
+
+```math
+\frac{git}{lab} \sum_0^\infty
+```
+
+### GitHub Single-dollar math?
+
+- Is $\frac{tex}{math} \sum_0^\infty$ rendered?
+- Adjacent text: non-$n^2$-secure ($n \log n$)?
+- What about $10 to $20 prices?
+- Whitespace inside: foo $ math $ bar?
+
 ### Test literals
 
-Are math-like sequences inside literals correctly left alone?  Or did https://github.com/gettalong/kramdown/issues/626 break that?
+Are math-like sequences inside literals correctly left alone?  
 `dollar: $ x^y $ dollars: $$ a^b $$ backslash-paren: \( c^d \)`
 
 ```
