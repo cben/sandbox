@@ -92,6 +92,18 @@ gitGraph:
 - Adjacent text: non-$n^2$-secure ($n \log n$)?
 - Whitespace inside: foo $ math $ bar?
 
+### Test math in literals
+
+Are math-like sequences inside literals correctly left alone?  Or did https://github.com/gettalong/kramdown/issues/626 break that?
+`dollar: $ x^y $ dollars: $$ a^b $$ backslash-paren: \( c^d \)`
+
+```
+backslash-bracket: \[ e^f \]
+dollars alone:
+
+$$ g^h $$
+```
+
 ### Linking to headers
 #### Test explicit anchor {#test-anchor}
 

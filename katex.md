@@ -17,3 +17,14 @@ $$ \frac{kram}{down} \sum_0^\infty $$
 
 The second is display math because it occurs alone in a block.
 
+### Test literals
+
+Are math-like sequences inside literals correctly left alone?  Or did https://github.com/gettalong/kramdown/issues/626 break that?
+`dollar: $ x^y $ dollars: $$ a^b $$ backslash-paren: \( c^d \)`
+
+```
+backslash-bracket: \[ e^f \]
+dollars alone:
+
+$$ g^h $$
+```
