@@ -6,8 +6,5 @@ defaults:
 
 markdown: kramdown  # already the default in Github's Jekyll.
 kramdown:
-  # The following is untested, suppossed to work once Github gets Kramdown 1.6...
-  # (current visible at https://pages.github.com/versions)
-  math_engine: mathjax  # default in Kramdown
-  math_engine_opts:
-    preview: true   # not default but better acessibility
+  # I'm doing client-side math processing, just want unambiguous marking of math.
+  math_engine: null
