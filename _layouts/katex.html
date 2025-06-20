@@ -23,14 +23,15 @@
       for (const elem of mathElems) {
         const text = elem.textContent.replace(/^[$]*/g, '').replace(/[$]*$/g, '');
         var options = { macros, throwOnError: false };
-        options.displayMode = elem.tagName === "DIV";
-        //console.log('katex.render', elem, text, options)
+        options.displayMode = elem.tagName !== "SPAN";  // standalone $$...$$ becomes DIV, ```math blocks become CODE
+        console.log('katex.render', elem, text, options)
         katex.render(text, elem, options);
       }
       document.body.className += " math_finished";
     }
 
     if (mathElems.length > 0) {
+      console.log('math detected, processing')
       document.head.append(document.createRange().createContextualFragment(KATEX));
     }
   </script>
