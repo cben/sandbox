@@ -4,7 +4,7 @@ defaults:
     values:
       layout: "default"
 
-markdown: kramdown  # already the default in Github's Jekyll.
+markdown: GFM
 kramdown:
   # I'm doing client-side math processing, just want unambiguous marking of math.
   math_engine: null
