@@ -4,7 +4,7 @@ defaults:
     values:
       layout: "default"
 
-markdown: kramdown
+markdown: CommonMarkGhPages
 kramdown:
   input: GFM
   # I'm doing client-side math processing, just want unambiguous marking of math.
