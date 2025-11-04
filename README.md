@@ -86,6 +86,10 @@ $$ g^h $$
 ## Mermaid — mostly works in both GitHub & GitLab
 
 ```mermaid
+info
+```
+
+```mermaid
 flowchart LR;
     A-->B;
     B-->C;
