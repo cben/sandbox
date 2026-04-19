@@ -198,4 +198,16 @@ P.S. shameless plug: if anybody is reading this and looking for collaborative *m
 
 ----
 
-- Testing push via svn with master configured "Protect this branch", "Include administrators".
+## Footnotes, and are they good [for bibliography](https://stackoverflow.com/a/77190029/239657)?
+
+Foo [^Fred1960] bar [^Barney1961] baz.
+
+And again [^Fred1960] — let's see how it renders?
+
+[^Barney1961]: Barney, Flinstones, 1961 TV
+
+### Bibliography
+
+(This section really should be last, because wherever you define the footnotes, they render here at the end.)
+
+[^Fred1960]: Fred, Flinstones, 1960 TV
