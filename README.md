@@ -200,7 +200,9 @@ P.S. shameless plug: if anybody is reading this and looking for collaborative *m
 
 ## Bibliography, manually
 
-Foo [[1960]](#Fred1960) bar [[Barney1961]](#Barney1961) baz.
+<!-- GitLab needs escaping to avoid wiki syntax https://stackoverflow.com/questions/26587527/cite-a-paper-using-github-markdown-syntax#comment139904706_58693582 -->
+
+Foo [\[1960\]](#Fred1960) bar [\[Barney1961\]](#Barney1961) baz.
 
 Mention [[1960]](#Fred1960) again.
 
