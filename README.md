@@ -207,7 +207,7 @@ Foo [\[1960\]](#Fred1960) bar [\[Barney1961\]](#Barney1961) baz.
 Mention [[1960]](#Fred1960) again.
 
 - <a id="Fred1960">[1960]</a> [Fred, Flinstones](https://en.wikipedia.org/wiki/The_Flintstones#The_Flintstones), 1960 TV
-- <a id="Barney1961">[Barney1961]</a> [Barney, Flinstones](https://en.wikipedia.org/wiki/The_Flintstones#The_Rubbles), 1961 TV
+- <a id="Barney1961" name="Barney1961">[Barney1961]</a> [Barney, Flinstones](https://en.wikipedia.org/wiki/The_Flintstones#The_Rubbles), 1961 TV
 
 ## Footnotes, and are they good [for bibliography](https://stackoverflow.com/a/77190029/239657)?
 
